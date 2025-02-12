@@ -43,6 +43,15 @@
 .light-green{
     color: #95B226;
 }
+.link-1{
+  color: #64C8FF;
+}
+.link-2{
+  color: #F0AA00;
+}
+.link-3{
+  color:#8700FF
+}
 .bg{
    background-color: #F7F7F7;
    
@@ -55,7 +64,12 @@
   border-radius: 12px;
   font-weight: 700;
   font-size: 1.25rem;
-
+}
+.card-link{
+  font-weight: 700;
+  font-size: .94rem;
+  text-decoration: none;
+  
 }
   
 
@@ -108,11 +122,8 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 1.25rem;
-  
-    
-   
-
   }
+
   /* banner style */
   .banner{
     justify-content: center;
@@ -124,7 +135,6 @@
   .banner-content{
     max-width: 640px;
     gap: 50px;
-  
   }
   .banner-title{
     font-weight: 700;
@@ -136,6 +146,25 @@
   .banner-image{
     width: 100%;
   }
+  /* card related style */
+  .card{
+    border: 1px solid ;
+    border-radius: 18px;
+  }
+  .crd-title{
+    font-weight: 700;
+    font-size: 1.54rem;
+  }
+  .card-description{
+    font-weight: 500;
+    font-size: .99rem;
+    color: #808080;
+
+  }
+  .card-btn{
+     
+  }
+
 
 
 
