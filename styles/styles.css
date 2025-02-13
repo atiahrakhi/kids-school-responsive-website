@@ -43,18 +43,17 @@
 .light-green{
     color: #95B226;
 }
-.link-1{
+#link-1{
   color: #64C8FF;
-}
-.link-2{
+  }
+#link-2{
   color: #F0AA00;
 }
-.link-3{
-  color:#8700FF
+#link-3{
+  color:#8700FF;  
 }
 .bg{
    background-color: #F7F7F7;
-   
 }
 .btn-primary{
   background-color: black;
@@ -65,12 +64,14 @@
   font-weight: 700;
   font-size: 1.25rem;
 }
-.card-link{
-  font-weight: 700;
-  font-size: .94rem;
-  text-decoration: none;
-  
+
+.bg-image{
+  background-image: url(../assets/bg.png);
+  box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+
+
   
 
 
@@ -85,7 +86,7 @@
     align-items: center;
     }
 
-  .navbar, .banner{
+  .navbar, .banner, .card-container{
     max-width: 1160px;
     margin: 0 auto;
   }
@@ -146,10 +147,53 @@
   .banner-image{
     width: 100%;
   }
-  /* card related style */
+
+  /* card section related style */
+  .school-category{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 80px; */
+   
+   
+   
+  }
+  .section-title{
+    font-weight: 700;
+    font-size: 2.87rem;
+    color: #000000;
+    margin-top: 60px;
+    margin-bottom: 0;
+    
+  }
+  .card-container{
+padding: 60px 0;
+    column-gap: 28px;
+  }
+  .arrow{
+    width: 130px;
+    height: 60px;
+    margin-bottom: 80px; 
+    text-align: center;
+    
+  }
+  .arrow-btn{
+    font-size: 3rem;
+  }
   .card{
-    border: 1px solid ;
-    border-radius: 18px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 40px;
+    border: .94px solid #FFFFFF;
+    border-radius: 18.8px;
+    max-width: 376px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  }
+  .card-icon{
+    width: 136px;
+    height: 136px;
   }
   .crd-title{
     font-weight: 700;
@@ -158,13 +202,29 @@
   .card-description{
     font-weight: 500;
     font-size: .99rem;
+    line-height: 28.3px;
     color: #808080;
-
   }
-  .card-btn{
-     
+  .card-link{
+    font-weight: 700;
+    font-size: .94rem;
+    text-decoration: none;
+    line-height: 28.3px;
+    
+  }
+  #card-1{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
+  #card-2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
+  #card-3{  
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
   }
 
+  
+  
+  
 
 
 
@@ -175,7 +235,7 @@
 
 
   /* responsive media query */
-  /* small device */
+  /* navbar and banner responsive in small device */
   @media screen and (max-width: 576px) {
    .banner{
     flex-direction: column-reverse;
@@ -200,7 +260,7 @@
       font-size: 1rem;
       padding: 6px 24px;
     }
-    .nav-links, .brand, .nav-button{
+    .nav-links, .brand, .nav-button {
       display: none;
     }
     .logo{
@@ -215,5 +275,8 @@
     #hamburger{
       display: block;
     }
+    /* card responsive */
+  
+
   }
 
